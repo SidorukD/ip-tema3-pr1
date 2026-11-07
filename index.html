@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приют для животных "Теремок"</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+            <div class="container-xxl">
+                <a class="navbar-brand text-warning fw-bold d-flex align-items-center" href="#">
+                    <i class="fa-solid fa-paw fa-xl me-2"></i>Теремок
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-warning" id="offcanvasNavbarLabel">Меню</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-medium">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#pit">Наши питомцы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#form">Усыновить</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#about">О Нас</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 border-warning" type="search" placeholder="Найти питомца" aria-label="Search">
+                            <button class="btn btn-warning text-white" type="submit">Поиск</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-5 mt-4">
+        <section class="py-5 bg-warning-subtle">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-5 d-none d-md-block">
+                        <img class="w-100 rounded-4 shadow" src="img/dog.webp" alt="Собака">
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <h1 class="display-4 fw-bold mb-3 text-dark">Найди себе верного друга!</h1>
+                        <p class="lead text-secondary mb-4">
+                            В нашем приюте живут десятки замечательных животных, которые ищут свой новый дом. Каждый из них достоин любви и заботы. Подарите им шанс на счастливую жизнь!
+                        </p>
+                        <a href="#pit" class="btn btn-warning text-white btn-lg px-4 shadow-sm">Смотреть питомцев</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pit" class="container my-5 py-4">
+            <h2 class="display-5 text-center mb-5 fw-bold">Наши питомцы</h2>
+            <div id="petsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                                    <img src="img/cat.webp" class="card-img-top" alt="Кот">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Барсик</h5>
+                                        <p class="card-text text-muted small">Возраст: 1 год. Очень ласковый и игривый котик.</p>
+                                        <a href="#form" class="btn btn-outline-warning w-100 fw-medium">Усыновить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 d-none d-sm-block">
+                                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                                    <img src="img/cat.webp" class="card-img-top" alt="Кот">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Мурка</h5>
+                                        <p class="card-text text-muted small">Возраст: 2 года. Спокойная, любит сидеть на руках.</p>
+                                        <a href="#form" class="btn btn-outline-warning w-100 fw-medium">Усыновить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+                                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                                    <img src="img/cat.webp" class="card-img-top" alt="Кот">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Рыжик</h5>
+                                        <p class="card-text text-muted small">Возраст: 3 года. Общительный и активный.</p>
+                                        <a href="#form" class="btn btn-outline-warning w-100 fw-medium">Усыновить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 d-none d-xl-block">
+                                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                                    <img src="img/cat.webp" class="card-img-top" alt="Кот">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Снежок</h5>
+                                        <p class="card-text text-muted small">Возраст: 6 месяцев. Пушистый и любопытный.</p>
+                                        <a href="#form" class="btn btn-outline-warning w-100 fw-medium">Усыновить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                                    <img src="img/cat.webp" class="card-img-top" alt="Кот">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Лео</h5>
+                                        <p class="card-text text-muted small">Возраст: 4 года. Важный и независимый.</p>
+                                        <a href="#form" class="btn btn-outline-warning w-100 fw-medium">Усыновить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 d-none d-sm-block">
+                                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                                    <img src="img/cat.webp" class="card-img-top" alt="Кот">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Луна</h5>
+                                        <p class="card-text text-muted small">Возраст: 2 года. Загадочная и тихая.</p>
+                                        <a href="#form" class="btn btn-outline-warning w-100 fw-medium">Усыновить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+                                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                                    <img src="img/cat.webp" class="card-img-top" alt="Кот">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Тиша</h5>
+                                        <p class="card-text text-muted small">Возраст: 1 год. Любит спать и кушать.</p>
+                                        <a href="#form" class="btn btn-outline-warning w-100 fw-medium">Усыновить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 d-none d-xl-block">
+                                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                                    <img src="img/cat.webp" class="card-img-top" alt="Кот">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Симба</h5>
+                                        <p class="card-text text-muted small">Возраст: 5 лет. Царственная осанка.</p>
+                                        <a href="#form" class="btn btn-outline-warning w-100 fw-medium">Усыновить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#petsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Назад</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#petsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Вперед</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="form" class="container my-5 py-5 bg-body-tertiary rounded-4 shadow-sm">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <h2 class="display-5 text-center mb-4 fw-bold">Анкета на усыновление</h2>
+                    <p class="text-center text-muted mb-4">Заполните форму, и мы свяжемся с вами для знакомства с питомцем.</p>
+                    <form action="#" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Ваше имя</label>
+                                <input type="text" class="form-control" id="name" name="name" required minlength="2" placeholder="Иван">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Телефон</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required pattern="\+?[0-9\s\-\(\)]{10,}" placeholder="+7 (999) 123-45-67">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required placeholder="example@mail.ru">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="pet" class="form-label">Кого хотите усыновить?</label>
+                                <select class="form-select" id="pet" name="pet" required>
+                                    <option value="" disabled selected>Выберите питомца...</option>
+                                    <option value="1">Барсик</option>
+                                    <option value="2">Мурка</option>
+                                    <option value="3">Рыжик</option>
+                                    <option value="4">Снежок</option>
+                                    <option value="5">Другой</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Расскажите о себе</label>
+                                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="agree" name="agree" required>
+                                    <label class="form-check-label" for="agree">
+                                        Я согласен на обработку персональных данных
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button class="btn btn-warning text-white btn-lg px-5 shadow-sm" type="submit">Отправить заявку</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="about" class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <a class="text-warning text-decoration-none mb-3 d-inline-block" href="#">
+                <i class="fa-solid fa-paw fa-2x"></i>
+            </a>
+            <p class="mb-1 fw-bold">Приют для животных "Теремок"</p>
+            <p class="mb-3 text-white-50 small">Подари дом четвероногому другу</p>
+            <p class="mb-1"><i class="fa-solid fa-phone me-2 text-warning"></i>+7 (949) 949-66-77</p>
+            <p class="mb-0 text-white-50 small">&copy; 2026 Все права защищены</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
